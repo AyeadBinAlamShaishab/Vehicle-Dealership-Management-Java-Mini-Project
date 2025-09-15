@@ -35,7 +35,7 @@ public class VehiGUI implements ActionListener {
         frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
         frame.setLayout(null);
 
-        // Top panel
+        //Eita Top panel
         topPanel = new JPanel();
         topPanel.setBackground(Color.WHITE);
         topPanel.setOpaque(true);
@@ -54,14 +54,14 @@ public class VehiGUI implements ActionListener {
 
         frame.add(topPanel);
 
-        // Left panel
+        //Eita Left panel
         leftPanel = new JPanel();
         leftPanel.setBackground(Color.WHITE);
         leftPanel.setOpaque(true);
         leftPanel.setBounds(0, 0, 900, 750);
         leftPanel.setLayout(null);
 
-        // Toyota_Cars
+        //Eita Toyota_Cars
         ImageIcon toyota = new ImageIcon("VehicleImages/Toyota_Cars.png");
         Image toyotaIMG = toyota.getImage();
         Image toyota1 = toyotaIMG.getScaledInstance(900, 215, Image.SCALE_SMOOTH);
@@ -88,7 +88,7 @@ public class VehiGUI implements ActionListener {
         TC2btn.addActionListener(this);
         frame.add(TC2btn);
 
-        //Motor_Bikes
+        //Eita Motor_Bikes
         ImageIcon MotoBike = new ImageIcon("VehicleImages/Motor_Bikes.png");
         Image MotoBikeIMG = MotoBike.getImage();
         Image MotoBike1 = MotoBikeIMG.getScaledInstance(900, 215, Image.SCALE_SMOOTH);
@@ -115,7 +115,7 @@ public class VehiGUI implements ActionListener {
         MB2btn.addActionListener(this);
         frame.add(MB2btn);
 
-        // Ford_Cars
+        //Eita Ford_Cars
         ImageIcon ford = new ImageIcon("VehicleImages/Ford_Cars.png");
         Image fordIMG = ford.getImage();
         Image ford1 = fordIMG.getScaledInstance(900, 215, Image.SCALE_SMOOTH);
@@ -144,14 +144,14 @@ public class VehiGUI implements ActionListener {
 
         frame.add(leftPanel);
 
-        // Right panel
+        //Eita Right panel
         rightPanel = new JPanel();
         rightPanel.setBackground(Color.WHITE);
         rightPanel.setOpaque(true);
         rightPanel.setBounds(900, 0, 362, 750);
         rightPanel.setLayout(null);
 
-        // List_Image
+        //Eita List_Image
         ImageIcon SLI = new ImageIcon("VehicleImages/ShowList.png");
         Image SLIIMG = SLI.getImage();
         Image SLI1 = SLIIMG.getScaledInstance(350, 575, Image.SCALE_SMOOTH);
@@ -161,7 +161,7 @@ public class VehiGUI implements ActionListener {
         Sli.setBounds(10, 0, 475, 775);
         rightPanel.add(Sli);
 
-        // Invoice_Area
+        //Eita Invoice_Area
         invoice = new JTextArea();
         invoice.setEditable(false);
         invoice.setBackground(new Color(172, 172, 172)); 
@@ -385,3 +385,4 @@ public class VehiGUI implements ActionListener {
     }
 
 }
+
