@@ -7,8 +7,7 @@ public class VehiGUI implements ActionListener {
 
     private JFrame frame;
     private JPanel topPanel, leftPanel, rightPanel;
-    private JLabel startingText;
-    private JLabel subText, toyo1, mot1, for1;
+    private JLabel startingText, subText, toyo1, mot1, for1;
     private JButton TC1btn, TC2btn, MB1btn, MB2btn, FC1btn, FC2btn, Purbtn, Delbtn, RmvBtn;
     private JTextArea invoice;
     private JLabel totalLabel;
@@ -384,4 +383,5 @@ public class VehiGUI implements ActionListener {
         } else if (src == STextField) {
         }
     }
+
 }
