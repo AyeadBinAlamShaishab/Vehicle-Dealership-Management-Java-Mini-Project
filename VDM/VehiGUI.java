@@ -23,7 +23,7 @@ public class VehiGUI implements ActionListener {
         vehicles = new IVehicle[] {
             new Vehicle("Toyota Axio", 2150000, "VehicleImages/Axio.png"),
             new Vehicle("Toyota Supra", 14994502, "VehicleImages/Toyota_Supra.png"),
-            new Motorbike("Yamaha R15", 450000, "VehicleImages/Yamaha_R15.png",150),
+            new Motorbike("Yamaha R15", 660000, "VehicleImages/Yamaha_R15.png",150),
             new Motorbike("Kawasaki Ninja H2R", 4846800, "VehicleImages/Kawasaki_Ninja_H2R.png",1000),
             new Vehicle("Ford Focus", 1519798, "VehicleImages/Ford_Focus.png"),
             new Vehicle("Ford Mustang", 2150000, "VehicleImages/Ford_Mustang.png")
@@ -383,4 +383,5 @@ public class VehiGUI implements ActionListener {
         } else if (src == STextField) {
         }
     }
+
 }
