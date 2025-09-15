@@ -35,7 +35,7 @@ public class VehiGUI implements ActionListener {
         frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
         frame.setLayout(null);
 
-        //Eita Top panel
+        //eita Top panel
         topPanel = new JPanel();
         topPanel.setBackground(Color.WHITE);
         topPanel.setOpaque(true);
@@ -61,7 +61,7 @@ public class VehiGUI implements ActionListener {
         leftPanel.setBounds(0, 0, 900, 750);
         leftPanel.setLayout(null);
 
-        //Eita Toyota_Cars
+        //Eita Toyota_Cars Part
         ImageIcon toyota = new ImageIcon("VehicleImages/Toyota_Cars.png");
         Image toyotaIMG = toyota.getImage();
         Image toyota1 = toyotaIMG.getScaledInstance(900, 215, Image.SCALE_SMOOTH);
@@ -88,7 +88,7 @@ public class VehiGUI implements ActionListener {
         TC2btn.addActionListener(this);
         frame.add(TC2btn);
 
-        //Eita Motor_Bikes
+        //Eita Motor_Bikes Part
         ImageIcon MotoBike = new ImageIcon("VehicleImages/Motor_Bikes.png");
         Image MotoBikeIMG = MotoBike.getImage();
         Image MotoBike1 = MotoBikeIMG.getScaledInstance(900, 215, Image.SCALE_SMOOTH);
@@ -115,7 +115,7 @@ public class VehiGUI implements ActionListener {
         MB2btn.addActionListener(this);
         frame.add(MB2btn);
 
-        //Eita Ford_Cars
+        //Eita Ford_Cars Parts
         ImageIcon ford = new ImageIcon("VehicleImages/Ford_Cars.png");
         Image fordIMG = ford.getImage();
         Image ford1 = fordIMG.getScaledInstance(900, 215, Image.SCALE_SMOOTH);
@@ -144,14 +144,14 @@ public class VehiGUI implements ActionListener {
 
         frame.add(leftPanel);
 
-        //Eita Right panel
+        // Right panel
         rightPanel = new JPanel();
         rightPanel.setBackground(Color.WHITE);
         rightPanel.setOpaque(true);
         rightPanel.setBounds(900, 0, 362, 750);
         rightPanel.setLayout(null);
 
-        //Eita List_Image
+        //Eita List_Image Part
         ImageIcon SLI = new ImageIcon("VehicleImages/ShowList.png");
         Image SLIIMG = SLI.getImage();
         Image SLI1 = SLIIMG.getScaledInstance(350, 575, Image.SCALE_SMOOTH);
@@ -161,7 +161,7 @@ public class VehiGUI implements ActionListener {
         Sli.setBounds(10, 0, 475, 775);
         rightPanel.add(Sli);
 
-        //Eita Invoice_Area
+        //Eita Invoice_Area Part
         invoice = new JTextArea();
         invoice.setEditable(false);
         invoice.setBackground(new Color(172, 172, 172)); 
@@ -295,7 +295,7 @@ public class VehiGUI implements ActionListener {
             private void displayPurchaseSummary(Purchase p, int ret) {
                 String summary =
                     
-                 
+                    "Customer " + customerCount + " Name : " + p.getCustomerName() + "\n" +
                     "Customer " + customerCount + " License No: " + p.getMaskedLicense() + "\n" +
                     "Total Cart: " + p.getTotal() + " BDT\n" +
                     "Cash Paid: " + p.getCash() + " BDT\n" +
@@ -321,14 +321,14 @@ public class VehiGUI implements ActionListener {
                 InvoiceSaver.saveInvoiceToFile(
                     invoice.getText(),
                     p.getCustomerName(),
-                    (double) p.getTotal(),
+                    p.getTotal(),
                     p.getCash(),
                     ret
                 );
             }
         });
         
-
+        //Eita Clear Cart Button er Part
         RmvBtn = new JButton("Cart Cleared");
         RmvBtn.setCursor(new Cursor(Cursor.HAND_CURSOR));
         RmvBtn.setBounds(175, 675, 120, 25);
@@ -383,6 +383,4 @@ public class VehiGUI implements ActionListener {
         } else if (src == STextField) {
         }
     }
-
 }
-
