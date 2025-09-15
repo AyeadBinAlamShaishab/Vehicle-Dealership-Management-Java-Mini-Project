@@ -7,11 +7,12 @@ public class InvoiceSaver {
             writer.write("======================================\n");
             writer.write("Customer: " + customer + "\n");
             writer.write(invoiceText);
-           writer.write("======================================\n");
+            writer.write("======================================\n");
           
             JOptionPane.showMessageDialog(null, "Invoice saved to sales.txt!");
         } catch (IOException ex) {
             JOptionPane.showMessageDialog(null, "Error saving invoice: " + ex.getMessage());
         }
     }
+
 }
