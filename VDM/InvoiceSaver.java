@@ -4,8 +4,7 @@ import javax.swing.*;
 public class InvoiceSaver {
     public static void saveInvoiceToFile(String invoiceText, String customer, double total, int cash, int returnAmount) {
         try (BufferedWriter writer = new BufferedWriter(new FileWriter("sales.txt", true))) {
-            writer.write("======================================\n");
-            writer.write("Customer: " + customer + "\n");
+            writer.write("======================================\n"); 
             writer.write(invoiceText);
             writer.write("======================================\n");
           
@@ -14,5 +13,4 @@ public class InvoiceSaver {
             JOptionPane.showMessageDialog(null, "Error saving invoice: " + ex.getMessage());
         }
     }
-
 }
